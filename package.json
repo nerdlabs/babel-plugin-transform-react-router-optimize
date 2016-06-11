@@ -1,0 +1,38 @@
+{
+  "name": "babel-plugin-transform-react-router-optimize",
+  "description": "Babel plugin to optimize the bundle size of projects using react-router.",
+  "version": "1.0.0",
+  "license": "MIT",
+  "main": "distribution/index.js",
+  "scripts": {
+    "clean": "rm -rf distribution",
+    "build": "babel -d distribution source",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepublish": "npm run clean && npm run build"
+  },
+  "author": {
+    "name": "Bjoern Brauer",
+    "email": "zaubernerd@nerdlabs.it"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nerdlabs/babel-plugin-transform-react-router-optimize.git"
+  },
+  "bugs": {
+    "url": "https://github.com/nerdlabs/babel-plugin-transform-react-router-optimize/issues"
+  },
+  "homepage": "https://github.com/nerdlabs/babel-plugin-transform-react-router-optimize#readme",
+  "keywords": [
+    "babel-plugin",
+    "react-router",
+    "optimization",
+    "minify",
+    "react",
+    "reactjs"
+  ],
+  "devDependencies": {
+    "babel-cli": "^6.10.1",
+    "babel-core": "^6.9.1",
+    "babel-preset-es2015": "^6.9.0"
+  }
+}
