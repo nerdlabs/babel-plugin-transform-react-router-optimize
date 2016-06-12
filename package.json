@@ -39,7 +39,9 @@
     "babel-cli": "^6.10.1",
     "babel-core": "^6.9.1",
     "babel-preset-es2015": "^6.9.0",
-    "cz-conventional-changelog-lint": "^0.1.3"
+    "chalk": "^1.1.3",
+    "cz-conventional-changelog-lint": "^0.1.3",
+    "diff": "^2.2.3"
   },
   "peerDependencies": {
     "react-router": ">=2.0.0"
