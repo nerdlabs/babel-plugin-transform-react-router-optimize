@@ -1,6 +1,6 @@
 export default function ({types: t}) {
-	const canReplace = (node) => {
-		return node.specifiers.every((specifier) => {
+	const canReplace = ({ specifiers }) => {
+		return specifiers.length > 0 && specifiers.every((specifier) => {
 			return t.isImportSpecifier(specifier)
 				&& specifier.imported.name !== 'default';
 		});
