@@ -8,7 +8,7 @@
     "clean": "rm -rf distribution",
     "build": "babel -d distribution source",
     "test": "node test/index.js",
-    "prepublish": "npm run clean && npm run build"
+    "prepublish": "npm run clean && npm run build && npm run test"
   },
   "author": {
     "name": "Bjoern Brauer",
