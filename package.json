@@ -7,7 +7,7 @@
   "scripts": {
     "clean": "rm -rf distribution",
     "build": "babel -d distribution source",
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "node test/index.js",
     "prepublish": "npm run clean && npm run build"
   },
   "author": {
