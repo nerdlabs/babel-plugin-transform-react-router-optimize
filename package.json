@@ -14,6 +14,11 @@
     "name": "Bjoern Brauer",
     "email": "zaubernerd@nerdlabs.it"
   },
+  "config": {
+    "commitizen": {
+      "path": "cz-conventional-changelog-lint"
+    }
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/nerdlabs/babel-plugin-transform-react-router-optimize.git"
@@ -34,6 +39,9 @@
     "babel-cli": "^6.10.1",
     "babel-core": "^6.9.1",
     "babel-preset-es2015": "^6.9.0",
-    "conventional-changelog-cli": "^1.2.0"
+    "cz-conventional-changelog-lint": "^0.1.3"
+  },
+  "peerDependencies": {
+    "react-router": ">=2.0.0"
   }
 }

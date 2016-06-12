@@ -1,3 +1,5 @@
+[![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/)
+
 # babel-plugin-transform-react-router-optimize
 
 The [React Router][0] library exposes all methods on the top level import, but
