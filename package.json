@@ -1,7 +1,7 @@
 {
   "name": "babel-plugin-transform-react-router-optimize",
   "description": "Babel plugin to optimize the bundle size of projects using react-router.",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "license": "MIT",
   "main": "distribution/index.js",
   "scripts": {

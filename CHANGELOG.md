@@ -1,3 +1,13 @@
+<a name="1.0.1"></a>
+## [1.0.1](https://github.com/nerdlabs/babel-plugin-transform-react-router-optimize/compare/v1.0.0...v1.0.1) (2016-06-12)
+
+
+### Bug Fixes
+
+* **transformation:** Leave imports which have no specifiers unchanged ([9a9738d](https://github.com/nerdlabs/babel-plugin-transform-react-router-optimize/commit/9a9738d))
+
+
+
 <a name="1.0.0"></a>
 # 1.0.0 (2016-06-11)
 
