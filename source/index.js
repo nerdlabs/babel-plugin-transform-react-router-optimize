@@ -1,4 +1,12 @@
 export default function ({types: t}) {
+	const namespace = 'react-router/lib'
+	const importMap = {
+		createRoutes: 'RouteUtils',
+		locationShape: 'PropTypes',
+		routerShape: 'PropTypes',
+		formatPattern: 'PatternUtils'
+	}
+
 	const canReplace = ({ specifiers }) => {
 		return specifiers.length > 0 && specifiers.every((specifier) => {
 			return t.isImportSpecifier(specifier)
@@ -8,9 +16,18 @@ export default function ({types: t}) {
 
 	const replace = (specifiers) => {
 		return specifiers.map(({local, imported}) => {
+			const mapped = importMap[imported.name]
+
+			if (typeof mapped !== 'undefined') {
+				return t.importDeclaration(
+					[t.importSpecifier(local, imported)],
+					t.stringLiteral(`${namespace}/${mapped}`)
+				);
+			}
+
 			return t.importDeclaration(
-				[t.importDefaultSpecifier(t.identifier(local.name))],
-				t.stringLiteral(`react-router/lib/${imported.name}`)
+				[t.importDefaultSpecifier(local)],
+				t.stringLiteral(`${namespace}/${imported.name}`)
 			);
 		});
 	};
